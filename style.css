@@ -1,0 +1,165 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+nav {
+    background-image: url(images/portfolioBG2.jpg);
+    background-size: auto;
+    height: 100vh; 
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background-color: black;
+    color: #eff6e0;
+}
+
+.navigation {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: #eff6e0;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.desktop-menu {
+    display: none;
+    list-style-type: none;
+}
+
+.desktop-menu li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.desktop-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+.desktop-menu a:hover {
+    color: red;
+    background-color: #aec3b0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .desktop-menu {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 4rem;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 1rem;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: red;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.info-section {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.info-content {
+    text-align: center;
+}
+
+.info-content p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.info-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.info-content span {
+    color: red;
+}
+
+.info-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

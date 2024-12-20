@@ -3,18 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <div class="hero-section">
+        <nav class="navigation">
+            <div class="logo">Dwight</div>
+            <ul class="desktop-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
         </nav>
-    </header>
-    
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <main class="content">
+            <section class="info-section">
+                <div class="info-content">
+                    <p>Computer Science Student</p>
+                    <h1>Hello, I'm Dwight</h1>
+                    <h2> From Philippines</h2>
+                </div>
+                <div class="image-container">
+                    <img src="" alt="Professional portrait">
+                </div>
+            </section>
+
+            <div>
+
+
+            </div>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
-</html>l
+</html>
